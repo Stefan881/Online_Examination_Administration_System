@@ -227,7 +227,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="student.html">
+        <a class="nav-link " href="{% url 'index-url' %}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -236,7 +236,7 @@
         <br><br>
         <!--Start of Examination Nav-->
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" href="{% url 'available_examination_url' %}">
           <i class="bi bi-book"></i><span>Examination</span>
         </a>
 
@@ -245,7 +245,7 @@
         <br><br>
         <!-- start of My Marks Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" href="{% url 'marks-url' %}">
           <i class="bi bi-check-all"></i><span>My Marks</span>
         </a>
 

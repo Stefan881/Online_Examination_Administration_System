@@ -15,6 +15,21 @@ def instructor(request):
     return render(request, 'instructor.html', {})
 
 
+def marks(request):
+    return render(request, 'student/Marks.html', {})
+
+
+def available_examinations(request):
+    return render(request, 'student/Available Examination.html', {})
+
+
+def register(request):
+    return render(request, 'register.html', {})
+
+
+def student_click(request):
+    return render(request,'student/student_click.html',{})
+
 def login(request):
     if request.method == 'POST':
         username = request.method['username']
@@ -25,4 +40,4 @@ def login(request):
     else:
         return render(request, 'login.html', {})
 
-    #return render(request, 'login.html', {})
+    # return render(request, 'login.html', {})
